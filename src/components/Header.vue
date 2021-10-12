@@ -22,7 +22,7 @@
       <div class="header-bottom-right">
         <ul>
           <li v-for="(elm, index) in nav" :key="index">
-            <a :href="elm.url">{{elm.navName}}</a>
+            <a :href="elm.url" :class="{ active : elm.current }">{{ elm.navName }}</a>
           </li>
         </ul>
       </div>
@@ -153,6 +153,9 @@ header {
           padding: 20px;
           text-decoration: none;
           color: black;
+        }
+        &.active {
+          color: #ffab0b;
         }
         a:hover {
           color: #ffab0b;
