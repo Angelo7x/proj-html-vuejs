@@ -4,7 +4,7 @@
       <div class="header-top-left">
         <ul>
           <li v-for="(link, index) in menu" :key="index">
-            <a :href="link.url"> {{link.nameLink}}</a>
+            <a :href="link.url"> <span v-html="link.iconLink"></span> {{link.nameLink}}</a>
           </li>
         </ul>
       </div>
@@ -17,7 +17,7 @@
     </div>
     <div class="header-bottom">
       <div class="header-bottom-left">
-        <img src="" alt="Logo">
+        <img src="../assets/img/university_logo.png" alt="Logo">
       </div>
       <div class="header-bottom-right">
         <ul>
@@ -37,22 +37,22 @@ export default {
       return {
         menu: [
           {
-            iconLink: <i class="fas fa-phone"></i>,
+            iconLink: '<i class="fas fa-phone"></i>',
             url: "#",
             nameLink: "1.800.567.8910",
           },
           {
-            iconLink: <i class="fas fa-envelope"></i>,
+            iconLink: '<i class="fas fa-envelope"></i>',
             url: "#",
             nameLink: "Contact us",
           },
           {
-            iconLink: <i class="fas fa-graduation-cap"></i>,
+            iconLink: '<i class="fas fa-graduation-cap"></i>',
             url: "#",
             nameLink: "Alumni",
           },
           {
-            iconLink: <i class="fas fa-university"></i>,
+            iconLink: '<i class="fas fa-university"></i>',
             url: "#",
             nameLink: "Campus",
           },
@@ -66,32 +66,32 @@ export default {
           {
             navName: "ABOUT",
             url: "#",
-            current: "false",
+            current: false,
           },
           {
             navName: "COURSES",
             url: "#",
-            current: "false",
+            current: false,
           },
           {
             navName: "EVENTS",
             url: "#",
-            current: "false",
+            current: false,
           },
           {
             navName: "FACILITIES",
             url: "#",
-            current: "false",
+            current: false,
           },
           {
             navName: "NEWS",
             url: "#",
-            current: "false",
+            current: false,
           },
           {
             navName: "ADMISSIONS",
             url: "#",
-            current: "false",
+            current: false,
           },
         ],
       }
@@ -153,9 +153,9 @@ header {
           padding: 20px;
           text-decoration: none;
           color: black;
-        }
         &.active {
           color: #ffab0b;
+        }
         }
         a:hover {
           color: #ffab0b;
