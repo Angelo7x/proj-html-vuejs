@@ -81,6 +81,32 @@
           <p>Covering topics from classes to politics and student organization events.</p>
           <hr>
         </div>
+        <div class="img-container">
+          <div class="left-img">
+            <a href="#"><img src="../assets/img/news_single_post_header_1-400x222.jpg" alt="post1"></a>
+            <div class="left-text">
+              <h3>What do successful grads think you should study?</h3>
+              <p>By admin|March 16th, 2016</p>
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+          <div class="middle-img">
+            <a href="#"><img src="../assets/img/news_single_post_header_2-400x222.jpg" alt="post2"></a>
+            <div class="middle-text">
+              <h3>Former student discusses success in the fashion industry</h3>
+              <p>By admin|March 15th, 2016</p>
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+          <div class="right-img">
+            <a href="#"><img src="../assets/img/news_single_post_header_3-400x222.jpg" alt="post3"></a>
+            <div class="right-text">
+              <h3>How do you best prepare for university?</h3>
+              <p>By admin|March 15th, 2016</p>
+              <a href="#">Read More ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -310,13 +336,14 @@ section {
 }
 .fifth-section {
   margin-top: 50px;
+  height: 750px;
+  background-color: #f7f5f4;
   .fifth-section-container {
     width: $sizeContainer;
     margin: auto;
     text-align: center;
     .logo-section {
     margin-bottom: 70px;
-    text-align: center;
     color: $firstColor;
       h2 {
         margin: 15px 0;
@@ -329,6 +356,28 @@ section {
         width: 50px;
         margin: 30px auto;
       }
+    }
+  }
+}
+.img-container {
+  display: flex;
+  .left-img, .middle-img, .right-img {
+    background-color: #fff;
+    margin-right: 30px;
+  }
+  .left-text, .middle-text, .right-text {
+    padding: 30px;
+    // background-color: #fff;
+    h3 {
+      color: $thirdColor;
+    }
+    a {
+      text-decoration: none;
+      color: $thirdColor;
+    }
+    p {
+      color: $secondColor;
+      margin: 10px 0;
     }
   }
 }
