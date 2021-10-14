@@ -149,7 +149,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 300px;
+  margin-top: 200px;
   .footer-container {
     @import '../assets/style/variables';
     width: $sizeFooterContainer;

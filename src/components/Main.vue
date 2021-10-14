@@ -109,6 +109,18 @@
         </div>
       </div>
     </div>
+    <div class="sixth-section">
+      <div class="sixth-section-container">
+        <h2>Joing Over <span>500,00 Students</span> Enjoying Avada Education Now</h2>
+        <p>Become Part of Avada University to Further Your Career.</p>
+        <div class="input-container">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="text" name="telephone" placeholder="Telephone">
+          <button class="btn orange-btn">APPLY NOW</button>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -382,4 +394,36 @@ section {
   }
 }
 
+.sixth-section {
+  background-color: $firstColor;
+  height: 300px;
+  .sixth-section-container {
+    margin: auto;
+    width: $sizeContainer;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    span {
+      color: $thirdColor;
+    }
+    p {
+      color: $secondColor;
+      padding-bottom: 50px;
+    }
+    .input-container {
+      input {
+        padding: 7px 24px;
+        margin-right: 10px;
+        border: none;
+        background-color: #444d63;
+      }
+      ::placeholder {
+        color: #fff;
+      }
+    button:hover {
+      background-color: #444d63;
+    }
+    }
+  }
+}
 </style>
