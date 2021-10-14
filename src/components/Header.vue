@@ -9,10 +9,10 @@
         </ul>
       </div>
       <div class="header-top-right">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
     <div class="header-bottom">

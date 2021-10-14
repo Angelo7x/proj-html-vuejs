@@ -38,6 +38,18 @@
           </ul>
         </li>
       </ul>
+      <hr>
+      <div class="footer-bottom">
+        <div class="footer-bottom-text">
+          <p>© Copyright 2012 - 2021 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
+        </div>
+        <div class="footer-bottom-icon">
+          <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" titgle="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -152,6 +164,9 @@ footer {
   margin-top: 200px;
   .footer-container {
     @import '../assets/style/variables';
+    hr {
+      margin: 30px 0;
+    }
     width: $sizeFooterContainer;
     // height: 200px;
     margin: auto;
@@ -179,6 +194,20 @@ footer {
         li {
           padding: 20px 0;
           display: inline-block;
+        }
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+      .footer-bottom-text, .footer-bottom-icon {
+        color: $secondColor;
+      }
+      .footer-bottom-icon {
+        a {
+          padding: 10px;
+          color: $secondColor;
         }
       }
     }
