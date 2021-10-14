@@ -379,6 +379,10 @@ section {
     background-color: #fff;
     margin-right: 30px;
   }
+  img:hover {
+    transform: scale(1.5);
+    transition: transform .8s;
+  }
   .left-text, .middle-text, .right-text {
     padding: 30px;
     // background-color: #fff;
