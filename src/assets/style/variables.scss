@@ -2,6 +2,7 @@ $sizeContainer: 80%;
 
 $sizeFooterContainer: 90%;
 
+
 $firstColor: #333c4e;
 $secondColor: #7f8991;
 $thirdColor: #ef993d;
@@ -13,8 +14,8 @@ $thirdColor: #ef993d;
 }
 
 .orange-btn {
-    background-color: #f09a3f;
-    border: 1px solid #f09a3f;
+    background-color: $thirdColor;
+    border: 1px solid $thirdColor;
 }
 
 .blue-btn {

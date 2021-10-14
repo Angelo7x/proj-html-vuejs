@@ -146,6 +146,11 @@ header {
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    // position: fixed;
+    // top: 70;
+    // z-index: 1;
+    // width: 100%;
+    background-color: #fff;
     .header-bottom-right {
       li {
         list-style: none;

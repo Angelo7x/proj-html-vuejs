@@ -13,7 +13,7 @@
     <!-- Seconda sezione -->
     <div class="second-section">
       <div class="logo-section">
-        <a href="#"><img src="../assets/img/page-logo-1.png" alt="logosection"></a>
+        <a href="#"><img src="../assets/img/page-logo-1.png" alt="logo"></a>
         <h2>Inspired By Excellence & Innovation</h2>
         <p>We offer a wide range of hight quality of teaching and extra-curricular activities.</p>
       </div>
@@ -47,6 +47,39 @@
               <a :href="text.url"> <span v-html="text.valuesIcon"></span> {{text.valuesText}}</a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fourth-section">
+      <div class="fourth-section-hero-left">
+        <div class="left-text-hero">
+          <h2>COURSES</h2>
+          <hr>
+          <p>View More...</p>
+        </div>
+      </div>
+      <div class="fourth-section-hero-middle">
+        <div class="middle-text-hero">
+          <h2>EVENTS</h2>
+          <hr>
+          <p>View More...</p>
+        </div>
+      </div>
+      <div class="fourth-section-hero-right">
+        <div class="right-text-hero">
+          <h2>LATEST NEWS</h2>
+          <hr>
+          <p>View More...</p>
+        </div>
+      </div>
+    </div>
+    <div class="fifth-section">
+      <div class="fifth-section-container">
+        <div class="logo-section">
+          <a href="#"><img src="../assets/img/page-logo-1.png" alt="logosection"></a>
+          <h2>Today's University News</h2>
+          <p>Covering topics from classes to politics and student organization events.</p>
+          <hr>
         </div>
       </div>
     </div>
@@ -204,4 +237,100 @@ section {
     }
   }
 }
+.fourth-section {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  .fourth-section-hero-left {
+    background-image: url("../assets/img/home_courses_section_bg.jpg");
+    width: calc((100%) / 3);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .left-text-hero {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      hr {
+        background-color: $thirdColor;
+        margin: 20px 0;
+      }
+    }
+  }
+  .fourth-section-hero-middle {
+    background-image: url("../assets/img/home_events_section_bg.jpg");
+    width: calc((100%) / 3);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .middle-text-hero {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      hr {
+        background-color: $thirdColor;
+        margin: 20px 0;
+      }
+    }
+  }
+  .fourth-section-hero-right:hover {
+    background-color: red;
+  }
+  .fourth-section-hero-right {
+    background-image: url("../assets/img/home_latest_news_section_bg.jpg");
+    width: calc((100%) / 3);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .right-text-hero {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      hr {
+        background-color: $thirdColor;
+        margin: 20px;
+      }
+    }
+  }
+}
+.fifth-section {
+  margin-top: 50px;
+  .fifth-section-container {
+    width: $sizeContainer;
+    margin: auto;
+    text-align: center;
+    .logo-section {
+    margin-bottom: 70px;
+    text-align: center;
+    color: $firstColor;
+      h2 {
+        margin: 15px 0;
+      }
+      p {
+        color: #7e8890;
+      }
+      hr {
+        background-color: $thirdColor;
+        width: 50px;
+        margin: 30px auto;
+      }
+    }
+  }
+}
+
 </style>
