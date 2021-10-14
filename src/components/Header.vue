@@ -152,7 +152,7 @@ header {
         a {
           padding: 20px;
           text-decoration: none;
-          color: black;
+          color: $firstColor;
         &.active {
           color: #ffab0b;
         }

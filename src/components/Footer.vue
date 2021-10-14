@@ -145,6 +145,10 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+  background-image: url("../assets/img/university_ft_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: 300px;
   .footer-container {
     @import '../assets/style/variables';
@@ -153,7 +157,7 @@ footer {
     margin: auto;
     a {
       text-decoration: none;
-      color: black;
+      color: $firstColor;
     }
     a:hover {
       opacity: 0.6;
@@ -163,7 +167,7 @@ footer {
       justify-content: space-between;
       list-style: none;
       h3 {
-        color: #333c4e;
+        color: $firstColor;
         margin-bottom: 20px;
       }
       ul {
