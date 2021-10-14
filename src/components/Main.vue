@@ -300,6 +300,11 @@ section {
       }
     }
   }
+  .fourth-section-hero-left:hover, .fourth-section-hero-middle:hover, .fourth-section-hero-right:hover  {
+    transform: scale(0.8);
+    transition: transform 1.3s;
+    cursor: pointer;
+  }
   .fourth-section-hero-middle {
     background-image: url("../assets/img/home_events_section_bg.jpg");
     width: calc((100%) / 3);
@@ -320,9 +325,6 @@ section {
         margin: 20px 0;
       }
     }
-  }
-  .fourth-section-hero-right:hover {
-    background-color: red;
   }
   .fourth-section-hero-right {
     background-image: url("../assets/img/home_latest_news_section_bg.jpg");
