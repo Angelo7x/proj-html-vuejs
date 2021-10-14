@@ -100,9 +100,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/variables';
 header {
   height: 70px;
-  background-color: #ffab0b;
+  background-color: $thirdColor;
   .header-top {
     @import '../assets/style/variables';
     width: $sizeContainer;
@@ -154,11 +155,11 @@ header {
           text-decoration: none;
           color: $firstColor;
         &.active {
-          color: #ffab0b;
+          color: $thirdColor;
         }
         }
         a:hover {
-          color: #ffab0b;
+          color: $thirdColor;
         }
       }
     }
